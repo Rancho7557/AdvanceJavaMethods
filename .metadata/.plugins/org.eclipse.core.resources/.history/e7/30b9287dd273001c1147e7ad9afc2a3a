@@ -1,0 +1,28 @@
+package jADVJ2EE;
+
+
+class AB extends Thread
+{
+	public void run()
+	{
+		for(int i = 1; i <= 8; i++);
+		{
+			System.out.println("Tushar You can do this you just focse on it.");
+		}
+		 
+	}
+}
+public class ThreadsJava {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     AB t = new AB();
+     t.start();
+     
+     for(int i = 1; i <= 8; i++);
+		{
+			System.out.println("Tushar");
+		}
+	}
+
+}

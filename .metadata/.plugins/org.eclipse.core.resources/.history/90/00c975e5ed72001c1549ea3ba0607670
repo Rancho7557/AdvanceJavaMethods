@@ -1,0 +1,38 @@
+package jADVJ2EE;
+
+
+class A
+{
+	void input()
+	{
+		System.out.println("Enter Your Name: ");
+	}
+}
+class B extends A
+{
+	void show()
+	{
+		System.out.println("My Name is TusharJava");
+	}
+}
+class C extends A
+{
+	void display()
+	{
+		System.out.println("My Name is DhirajJava");
+	}
+}
+
+public class HierarInhert {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		B r = new B();
+		C r2 = new C();
+		
+		r.input(); r.show();
+		r2.input(); r2.display();
+	}
+
+}

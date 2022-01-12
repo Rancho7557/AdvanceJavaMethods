@@ -1,0 +1,31 @@
+package jADVJ2EE;
+import java.io.FileWriter;
+import java.io.IOException;
+
+
+//when we want to write something in file we will got some expection so we need to handle this exceptions in java.
+public class FileWrite {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+          
+		try
+		{
+			FileWriter d = new FileWriter("C:\\Users\\Tusha\\Desktop\\JavaWrite.html");
+			try
+			{
+				d.write("<h1>Java programming using write this text in java...!</h1> ");
+			}
+			finally
+			{
+				d.close();
+			}
+			System.out.println("Succesfully Write your html content using java..!");
+		}
+		catch(IOException i)
+		{
+			System.out.println(i);
+		}
+	}
+	
+}

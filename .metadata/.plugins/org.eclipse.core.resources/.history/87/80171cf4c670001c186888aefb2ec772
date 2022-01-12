@@ -1,0 +1,25 @@
+package jADVJ2EE;
+interface A 
+{
+	void show(); // public  + abstract
+	 
+}
+interface B 
+{
+	void show();  // public + abstract
+	 
+}
+
+public class Multiface implements A,B
+{
+  public void show()
+  {
+	  System.out.println("This is interface A and B");  
+  }
+	public static void main(String[] args) {
+		 
+     Multiface m = new Multiface();
+      m.show();
+	}
+
+}

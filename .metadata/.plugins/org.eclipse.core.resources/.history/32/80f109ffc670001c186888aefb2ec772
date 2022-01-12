@@ -1,0 +1,25 @@
+package jADVJ2EE;
+interface Tushar 
+{
+	void show(); // public  + abstract
+	 
+}
+interface Dhanurkar 
+{
+	void show();  // public + abstract
+	 
+}
+
+public class Multiface implements Tushar, Dhanurkar
+{
+  public void show()
+  {
+	  System.out.println("This is interface A and B");  
+  }
+	public static void main(String[] args) {
+		 
+     Multiface m = new Multiface();
+      m.show();
+	}
+
+}

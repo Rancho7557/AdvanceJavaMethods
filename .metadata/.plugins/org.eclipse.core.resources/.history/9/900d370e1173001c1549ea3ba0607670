@@ -1,0 +1,32 @@
+package jADVJ2EE;
+
+class shape     // super class
+{
+         void draw()
+         {
+         
+        System.out.println("can't Say shape Tyep");
+
+         }
+}
+class square extends shape     //sub class extends super class
+{
+    // @Override
+     void draw()
+     {
+     super.draw();
+     System.out.println("Square shape");
+     
+     }
+
+}
+
+public class MethodOverride {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		shape r = new square();
+		r.draw();
+	}
+
+}
